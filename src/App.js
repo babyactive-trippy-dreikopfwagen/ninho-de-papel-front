@@ -1,12 +1,10 @@
-import { Button, Image, Pressable, Text, TextInput, TouchableOpacity } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { registerRootComponent } from 'expo';
+import React from 'react';
 import { Cadastro } from './screens/Cadastro';
-import { Home } from './screens/Home';
+import { Login } from './screens/Login';
 
 export default function App() {
-  return (
-    <SafeAreaView>
-      <Home />
-    </SafeAreaView>
-  );
+  return <Login />;
 }
+
+registerRootComponent(App);
