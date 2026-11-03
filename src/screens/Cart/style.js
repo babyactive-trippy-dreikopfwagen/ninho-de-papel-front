@@ -8,6 +8,7 @@ export const SafeContainer = styled.SafeAreaView`
 export const TopBar = styled.View`
   flex-direction: row;
   align-items: center;
+  margin-top: 30px;
   justify-content: space-between;
   padding-horizontal: 16px;
   padding-vertical: 12px;

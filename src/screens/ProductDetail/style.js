@@ -14,6 +14,7 @@ export const HeaderContainer = styled.View`
 
 export const TopBarActions = styled.View`
   width: 100%;
+  margin-top: 30px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

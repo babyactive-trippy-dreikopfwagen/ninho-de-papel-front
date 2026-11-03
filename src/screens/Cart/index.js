@@ -42,7 +42,7 @@ export const Cart = () => {
 
   const handleCheckout = () => {
     Alert.alert(
-      '🎉 Pedido Confirmado!',
+      ':) Pedido Confirmado!',
       `Obrigado por comprar no Ninho de Papel!\nTotal: ${formatPrice(finalTotal)}\nSeu pedido está sendo preparado com muito carinho.`,
       [
         {
