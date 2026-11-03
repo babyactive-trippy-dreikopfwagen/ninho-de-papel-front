@@ -28,17 +28,6 @@ export const LogoContainer = styled.View`
   margin-bottom: 12px;
 `;
 
-export const LogoIcon = styled.Text`
-  font-size: 26px;
-`;
-
-export const BrandName = styled.Text`
-  font-size: 24px;
-  font-weight: 800;
-  color: #FAF6F0;
-  letter-spacing: -0.5px;
-`;
-
 export const Title = styled.Text`
   font-size: 30px;
   font-weight: 700;

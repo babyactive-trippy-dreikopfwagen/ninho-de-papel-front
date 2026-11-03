@@ -1,12 +1,12 @@
 import React from "react";
+import { TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import { BrandLogo } from "../../components/brand-logo";
 import {
   Container,
   ScrollContainer,
   Header,
   LogoContainer,
-  LogoIcon,
-  BrandName,
   Title,
   TitleHighlight,
   FormCard,
@@ -21,16 +21,20 @@ import {
   TextRegister,
 } from "./styles";
 
-export const Login = () => {
+export const Login = ({ onNavigate }) => {
   return (
     <Container>
       <StatusBar style="light" backgroundColor="#0C3C4A" />
       <ScrollContainer showsVerticalScrollIndicator={false}>
         <Header>
-          <LogoContainer>
-            <LogoIcon>🪹</LogoIcon>
-            <BrandName>Ninho de Papel</BrandName>
-          </LogoContainer>
+          <TouchableOpacity
+            accessibilityRole="button"
+            accessibilityLabel="Voltar para a tela inicial"
+            onPress={() => onNavigate("welcome")}>
+            <LogoContainer>
+              <BrandLogo width={220} height={42} />
+            </LogoContainer>
+          </TouchableOpacity>
 
           <Title>
             Que bom te ver de volta! Faça seu <TitleHighlight>login</TitleHighlight>
@@ -67,7 +71,9 @@ export const Login = () => {
         </FormCard>
 
         <TextFooter>
-          Ainda não possui conta? <TextRegister>Cadastre-se</TextRegister>
+          Ainda não possui conta?           <TextRegister onPress={() => onNavigate("register")}>
+            Cadastre-se
+          </TextRegister>
         </TextFooter>
       </ScrollContainer>
     </Container>

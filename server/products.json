@@ -1,0 +1,122 @@
+[
+  {
+    "id": "notebook-spiral",
+    "name": "Caderno Espiral Criativo",
+    "description": "Capa dura, 10 matérias, 160 folhas",
+    "price": 39.9,
+    "category": "Cadernos",
+    "image": "📓",
+    "color": "#DDEBF0",
+    "featured": true
+  },
+  {
+    "id": "notebook-pocket",
+    "name": "Caderno de Anotações",
+    "description": "Compacto, pautado, 80 folhas",
+    "price": 22.9,
+    "category": "Cadernos",
+    "image": "📔",
+    "color": "#E8E2F0",
+    "featured": false
+  },
+  {
+    "id": "scissors",
+    "name": "Tesoura Escolar",
+    "description": "Ponta arredondada, cabo ergonômico",
+    "price": 12.5,
+    "category": "Tesouras",
+    "image": "✂️",
+    "color": "#F6E5DC",
+    "featured": true
+  },
+  {
+    "id": "paper-color",
+    "name": "Papel Colorido A4",
+    "description": "Pacote com 50 folhas em 10 cores",
+    "price": 18.9,
+    "category": "Papéis",
+    "image": "📃",
+    "color": "#F4EAD6",
+    "featured": true
+  },
+  {
+    "id": "paper-cardstock",
+    "name": "Papel para Desenho",
+    "description": "Bloco A4 com 20 folhas de alta gramatura",
+    "price": 16.9,
+    "category": "Papéis",
+    "image": "🗒️",
+    "color": "#DCECEF",
+    "featured": false
+  },
+  {
+    "id": "pens",
+    "name": "Canetas Criativas",
+    "description": "Kit com 3 canetas de ponta fina",
+    "price": 24.9,
+    "category": "Canetas",
+    "image": "🖊️",
+    "color": "#F3E4EC",
+    "featured": true
+  },
+  {
+    "id": "markers",
+    "name": "Marca-textos Pastel",
+    "description": "Kit com 6 cores suaves",
+    "price": 29.9,
+    "category": "Marca-textos",
+    "image": "🖍️",
+    "color": "#F6E5DC",
+    "featured": true
+  },
+  {
+    "id": "glue",
+    "name": "Cola Bastão",
+    "description": "Colagem limpa, embalagem de 20 g",
+    "price": 8.5,
+    "category": "Colas",
+    "image": "🧴",
+    "color": "#DDEBF0",
+    "featured": false
+  },
+  {
+    "id": "sticky-notes",
+    "name": "Bloco de Notas Adesivo",
+    "description": "4 blocos coloridos com 50 folhas",
+    "price": 19.9,
+    "category": "Adesivos",
+    "image": "🗒️",
+    "color": "#DCECEF",
+    "featured": true
+  },
+  {
+    "id": "planner",
+    "name": "Planner Semanal",
+    "description": "Organize sua rotina com criatividade",
+    "price": 34.9,
+    "category": "Planners",
+    "image": "🗓️",
+    "color": "#F4EAD6",
+    "featured": true
+  },
+  {
+    "id": "ruler",
+    "name": "Kit de Réguas",
+    "description": "3 peças escolares de 15 cm",
+    "price": 9.9,
+    "category": "Acessórios",
+    "image": "📏",
+    "color": "#E8E2F0",
+    "featured": false
+  },
+  {
+    "id": "pencil-case",
+    "name": "Estojo Organizador",
+    "description": "Estojo espaçoso para seus materiais",
+    "price": 27.9,
+    "category": "Acessórios",
+    "image": "🖍️",
+    "color": "#F3E4EC",
+    "featured": false
+  }
+]
