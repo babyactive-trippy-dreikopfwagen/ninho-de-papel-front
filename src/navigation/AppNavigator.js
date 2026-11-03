@@ -34,6 +34,7 @@ export const AppNavigator = () => {
       drawerContent={(props) => <CustomDrawerContent {...props} />}
       screenOptions={{
         headerShown: false,
+        drawerPosition: 'right',
         drawerStyle: {
           backgroundColor: '#FFFFFF',
           width: '85%',
