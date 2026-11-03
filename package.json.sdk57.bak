@@ -1,0 +1,36 @@
+{
+  "name": "ninho-de-papel",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "dependencies": {
+    "expo": "~57.0.14",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.2",
+    "react-native-safe-area-context": "~5.7.0",
+    "styled-components": "^6.5.3",
+    "@react-navigation/native": "^7.0.0",
+    "@react-navigation/drawer": "^7.0.0",
+    "@react-navigation/native-stack": "^7.0.0",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.0",
+    "react-native-screens": "~4.10.0",
+    "@expo/vector-icons": "^14.0.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "json-server": "^0.17.4"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "api": "npx json-server --watch db.json --port 3000",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run --headless"
+  },
+  "private": true
+}
+

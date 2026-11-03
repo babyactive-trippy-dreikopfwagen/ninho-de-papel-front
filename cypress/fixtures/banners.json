@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Promoção de Papéis",
+    "subtitle": "Até 30% de desconto em toda linha Kraft",
+    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800",
+    "backgroundColor": "#F8B4C8"
+  },
+  {
+    "id": 2,
+    "title": "Novidades em Papel de Seda",
+    "subtitle": "Confira as novas estampas da coleção",
+    "image": "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=800",
+    "backgroundColor": "#B8E6D0"
+  }
+]
+

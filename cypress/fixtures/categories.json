@@ -1,0 +1,9 @@
+[
+  { "id": 1, "name": "Papel Kraft", "icon": "package-variant", "color": "#D4A574" },
+  { "id": 2, "name": "Papel Cartão", "icon": "card-text-outline", "color": "#87CEEB" },
+  { "id": 3, "name": "Papel Vegetal", "icon": "leaf", "color": "#B8E6D0" },
+  { "id": 4, "name": "Papel Sulfite", "icon": "file-document-outline", "color": "#D4B8E8" },
+  { "id": 5, "name": "Papel de Seda", "icon": "flower-tulip-outline", "color": "#F8B4C8" },
+  { "id": 6, "name": "Papel Couché", "icon": "star-four-points-outline", "color": "#FDE68A" }
+]
+
