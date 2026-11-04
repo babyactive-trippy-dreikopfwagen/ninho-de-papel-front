@@ -33,14 +33,13 @@ export const Home = () => {
   const loadData = useCallback(async () => {
     try {
       setError(null);
-      // Requisições HTTP em paralelo consumindo API REST
       const [featuredRes, allRes] = await Promise.all([
         api.getFeaturedProducts(),
         api.getProducts(),
       ]);
 
       setFeaturedProducts(featuredRes);
-      setAllProducts(allRes.slice(0, 6)); // Primeiros 6 para a grade inicial
+      setAllProducts(allRes.slice(0, 6));
     } catch (err) {
       setError('Não foi possível carregar os produtos. Verifique se a API está ativa.');
     } finally {
@@ -86,18 +85,28 @@ export const Home = () => {
           {/* Seção Sugestões (Banner Promocional) */}
           <BannerCarousel />
 
-          {/* Seção Em Destaque (Conforme Wireframe 2) */}
+          {/* Seção Em Destaque */}
           <Section>
             <SectionHeader>
               <BadgeTitle>
                 <BadgeTitleText>Em destaque</BadgeTitleText>
               </BadgeTitle>
-              <ArrowButton
-                onPress={() => navigation.navigate('AllProducts', { filter: 'featured' })}
-                activeOpacity={0.7}
-              >
-                <Feather name="arrow-right" size={20} color="#374151" />
-              </ArrowButton>
+              
+              <View style={{ flexDirection: 'row', gap: 8 }}>
+                <ArrowButton
+                  onPress={() => navigation.navigate('Cadastro')}
+                  activeOpacity={0.7}
+                >
+                  <Feather name="user-plus" size={20} color="#374151" />
+                </ArrowButton>
+
+                <ArrowButton
+                  onPress={() => navigation.navigate('AllProducts', { filter: 'featured' })}
+                  activeOpacity={0.7}
+                >
+                  <Feather name="arrow-right" size={20} color="#374151" />
+                </ArrowButton>
+              </View>
             </SectionHeader>
 
             {featuredProducts.length === 0 ? (
@@ -139,4 +148,3 @@ export const Home = () => {
     </SafeContainer>
   );
 };
-

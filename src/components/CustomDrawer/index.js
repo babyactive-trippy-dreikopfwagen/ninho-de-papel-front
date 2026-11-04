@@ -14,7 +14,6 @@ import {
 
 /**
  * Conteúdo customizado do Drawer (menu lateral)
- * Layout baseado no wireframe da Imagem 1
  */
 export const CustomDrawerContent = ({ navigation }) => {
   const { getItemCount } = useCart();
@@ -25,11 +24,17 @@ export const CustomDrawerContent = ({ navigation }) => {
     { label: 'Todos os Produtos', screen: 'AllProducts', params: {} },
     { label: 'Em destaque', screen: 'AllProducts', params: { filter: 'featured' } },
     { label: 'Carrinho', screen: 'Cart' },
+    { label: 'Entrar / Login', screen: 'Login' },
+    { label: 'Criar Conta / Cadastro', screen: 'Cadastro' },
   ];
 
   const handleNavigate = (screen, params) => {
     navigation.closeDrawer();
-    navigation.navigate('Main', { screen, params });
+    // Navega para a stack 'Main' e repassa o nome da tela interna desejada
+    navigation.navigate('Main', { 
+      screen: screen, 
+      params: params 
+    });
   };
 
   return (
@@ -57,4 +62,3 @@ export const CustomDrawerContent = ({ navigation }) => {
     </Container>
   );
 };
-
